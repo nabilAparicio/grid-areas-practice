@@ -1,0 +1,29 @@
+.container {
+  display: grid;
+  width: 100vh;
+  height: 100vh;
+  grid-template: repeat(1fr, 2) / repeat(1fr, 2);
+  background-color: papayawhip;
+  grid-template-areas:
+    "item3 item2"
+    "item1 item1";
+  gap: 5px;
+}
+.item1 {
+  display: grid;
+  grid-area: item1;
+  background-color: red;
+  place-content: center;
+}
+.item2 {
+  display: grid;
+  place-content: center;
+  grid-area: item2;
+  background-color: royalblue;
+}
+.item3 {
+  display: grid;
+  place-content: center;
+  grid-area: item3;
+  background-color: seagreen;
+}
